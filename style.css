@@ -58,10 +58,34 @@ header {
   height: 40vh;
 }
 
+.promo-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  align-items: center;
+  border-bottom: .2px solid var(--grey-div) ;
+}
+
+.promo-section * {
+  font-weight: 400;
+}
+
+.promo-section__title {
+  font-size: 1.25rem;
+}
+
+.promo-section__subtitle {
+  font-size: 1.125rem;
+}
+
 @media (max-width: 414px) {
   nav {
     flex-wrap: wrap;
     align-items: center;
+  }
+
+  .promo-section {
+    padding: 1rem 2rem;
   }
 }
 
