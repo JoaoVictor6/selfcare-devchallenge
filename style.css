@@ -46,6 +46,18 @@ menu > li svg {
   height: 1.5rem;
 }
 
+header{
+  overflow: hidden;
+}
+
+header {
+  background-image: url(./assets/banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+
 @media (max-width: 414px) {
   nav {
     flex-wrap: wrap;
