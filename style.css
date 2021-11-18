@@ -71,11 +71,13 @@ header {
 }
 
 .promo-section__title {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .promo-section__subtitle {
-  font-size: 1.125rem;
+  font-size: 1.120rem;
 }
 
 @media (max-width: 414px) {
