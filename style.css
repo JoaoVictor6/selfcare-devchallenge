@@ -26,6 +26,12 @@ button {
   cursor: pointer;
 }
 
+input {
+  outline: none;
+  border: none;
+  background: none;
+}
+
 nav {
   display: flex;
   padding: 32px 64px;
@@ -120,10 +126,107 @@ header {
   font-size: 1rem;
 }
 
+footer {
+  background: var(--grey-background);
+  border-top: 1px solid var(--grey-div);
+}
+
+.footer__redirect-area {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+footer > hgroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 3rem;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.newsletter * {
+  font-size: 1.25rem;
+}
+
+.newsletter > form {
+  background: #fff;
+  border: 1px solid var(--grey-div);
+  border-radius: 6px;
+  display: flex;
+  align-items: stretch;
+}
+
+.newsletter input {
+  padding: 1rem .75rem;
+}
+
+.newsletter button {
+  color: #fff;
+  font-weight: 700;
+  background: var(--green);
+  padding: 0 2rem;
+}
+
+.footer__body {
+  display: flex;
+  padding: 2rem 3rem;
+  border-top: 1px solid var(--grey-div);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media, .bank-flags {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+}
+
+
 @media (max-width: 818px) {
   .products {
     margin: 1rem 2rem;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  footer > hgroup {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .footer__redirect-area{
+    align-self: flex-start;
+  }
+  .newsletter > label {
+    margin-left: 1rem;
+  }
+  .newsletter > form {
+    flex-direction: column;
+    border: none;
+    gap: 1rem;
+    width: calc(100vw - 2rem);
+    margin: 0 1rem;
+  }
+  .newsletter input {
+    border: 1px solid var(--grey-div);
+    border-radius: 6px;
+  }
+
+  .newsletter button {
+    border-radius: 6px;
+    padding: 16px;
+    width: 100%;
   }
 }
 
@@ -143,6 +246,11 @@ header {
   .promo-section {
     padding: 1rem 2rem;
   }
+
+  .footer__body {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
 }
 
 @media (max-width: 346px){
@@ -159,5 +267,3 @@ header {
     gap: 2rem;
   }
 } 
-
-
