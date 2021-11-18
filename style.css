@@ -11,10 +11,13 @@
   box-sizing: border-box;
 
   font-family: 'Lato', sans-serif;
+
+  transition: all .45s;
 }
 
 h1,h2,h3 {
   margin: 0;
+  font-weight: 400;
 }
 
 button {
@@ -78,6 +81,57 @@ header {
 
 .promo-section__subtitle {
   font-size: 1.120rem;
+}
+
+.products {
+  margin: 2rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.products__product {
+  margin-bottom: 1.6rem;
+}
+
+.product__image {
+  background-image: url(./assets/devin-avery-bMH8ub9z1_U-unsplash.jpg);
+  height: 230px;
+  width: 230px;
+
+  background-position: center;
+  background-size: cover;
+  margin-bottom: .6rem;
+}
+
+.product__body {
+  font-size: .75rem;
+}
+
+.product__body > h2 {
+  color: var(--green);
+  font-weight: 700;
+
+  margin-top: .2rem;
+}
+.product__body span {
+  color: #000;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@media (max-width: 818px) {
+  .products {
+    margin: 1rem 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .products {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 414px) {
